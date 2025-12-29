@@ -145,7 +145,7 @@ import numpy as np
 from tensorflow import keras
 
 # Load data
-data = scipy.io.loadmat('delta_reach_20080724-111450-001_Processed.mat')
+data = scipy.io.loadmat('data/delta_reach_20080724-111450-001_Processed.mat')
 neural_data = data['neural_data_pro']
 mouse_position = data['mouse_position']
 
@@ -156,14 +156,12 @@ mouse_position = data['mouse_position']
 
 ```
 neural-movement-decoder/
-├── AI_Project.ipynb          # Main Jupyter notebook with full analysis
-├── requirements.txt          # Python dependencies
-├── README.md                 # Project documentation
-├── data/
-│   └── delta_reach_*.mat     # Neural recording data (not included)
-└── results/
-    ├── model_comparison.png  # Training curves
-    └── confusion_matrix.png  # Classification results
+├── AI_Project.ipynb                                    # Main Jupyter notebook with full analysis
+├── requirements.txt                                    # Python dependencies
+├── README.md                                           # Project documentation
+├── .gitignore                                          # Git ignore file
+└── data/
+    └── delta_reach_20080724-111450-001_Processed.mat   # Neural recording data
 ```
 
 ## 🔬 Methodology
